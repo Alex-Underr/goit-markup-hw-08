@@ -1,0 +1,52 @@
+.subscribe-footer {
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+}
+
+.signup-form {
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 12px;
+  }
+}
+
+.icon-fly {
+  width: 24px;
+  height: 24px;
+  fill: var(--primary-white-color);
+}
+
+.subscribe {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  margin-bottom: 20px;
+}
+
+.window-mail {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  background-color: transparent;
+  padding: 15px 16px;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  width: 450px;
+  transition: 250ms border-color cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and(min-width: 1200px) {
+    width: 358px;
+  }
+}
+
+.window-mail:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}

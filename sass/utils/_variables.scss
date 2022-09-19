@@ -1,0 +1,11 @@
+:root {
+    --primary-text-color: #212121;
+    --title-text-color: #757575;
+    --accent-color: #2196f3;
+    --primary-white-color: #ffffff;
+}
+body {
+    font-family: Roboto, Raleway, sans-serif;
+    color: var(--primary-text-color);
+    background-color: var(--primary-white-color);
+}

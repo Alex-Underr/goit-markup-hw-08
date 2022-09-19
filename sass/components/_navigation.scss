@@ -1,0 +1,126 @@
+.site-nav {
+  display: flex;
+  margin-left: 87px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 92px;
+  }
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav .current {
+  color: var(--accent-color);
+}
+
+.site-nav .link {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  padding: 32px 0;
+  transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transition: 250ms transform cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav .link.current::after {
+  transform: scaleX(1);
+}
+
+.site-nav .link:hover::after {
+  transform: scaleX(1);
+}
+.auth-nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 30px;
+  margin-left: auto;
+  align-items: center;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (max-width: 1199px) {
+    align-items: start;
+    gap: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+
+.auth-nav .link {
+  display: flex;
+  align-items: center;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+  }
+}
+
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.icon-envelope,
+.icon-smartphone {
+  margin-right: 10px;
+  fill: currentColor;
+  transition: 250ms fill cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-envelope {
+  width: 14px;
+  height: 10px;
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.icon-smartphone {
+  width: 10px;
+  height: 14px;
+  @media screen and (min-width: 1200px) {
+    height: 16px;
+  }
+}
+
+.icon-envelope:hover,
+.icon-envelope:focus {
+  fill: var(--accent-color);
+}
+
+.icon-smartphone:hover,
+.icon-smartphone:focus {
+  fill: var(--accent-color);
+}
