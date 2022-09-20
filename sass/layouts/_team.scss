@@ -45,6 +45,14 @@
 .team__person--padding {
   padding: 30px 10px;
 }
+.team__person {
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
 
 .team__social-links {
   display: flex;
